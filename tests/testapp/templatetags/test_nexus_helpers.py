@@ -7,6 +7,7 @@ from nexus.sites import site
 
 
 class NexusHelpersTests(SimpleTestCase):
+    databases = {'default'}
 
     request_factory = RequestFactory()
 

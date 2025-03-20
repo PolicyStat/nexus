@@ -5,6 +5,7 @@ from nexus.conf import nexus_settings
 
 
 class NexusSettingsTests(SimpleTestCase):
+    databases = {'default'}
 
     @override_settings(NEXUS_MEDIA_PREFIX='/mynexusprefix/')
     def test_with_override_settings(self):
